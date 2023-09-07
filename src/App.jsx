@@ -2,15 +2,17 @@ import React from "react"
 import Contact from './Contact.jsx'
 import data from '../data.js'
 
-function App() { 
+export default function App() { 
 
   const dataMap = data.map(point => { 
     return( 
-      <Contact  
+      <Contact
+        key={point.id}  
         img={point.img}
         name={point.name}
         phone={point.phone}
         email={point.email}
+        availability={point.availability}
       />
     )
   })
@@ -21,5 +23,3 @@ function App() {
     </div>
   )
 }
-
-export default App
