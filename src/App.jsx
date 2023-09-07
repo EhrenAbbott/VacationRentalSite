@@ -1,33 +1,23 @@
 import React from "react"
 import Contact from './Contact.jsx'
+import data from '../data.js'
 
-function App() {
-  return (
-    <div className='contacts'> 
-      <Contact 
-        img="./src/assets/classic.jpg" 
-        name="estate"
-        phone="(212) 555-1234"
-        email="estate@gmail.com"
+function App() { 
+
+  const dataMap = data.map(point => { 
+    return( 
+      <Contact  
+        img={point.img}
+        name={point.name}
+        phone={point.phone}
+        email={point.email}
       />
-      <Contact 
-        img="./src/assets/rural.jpg" 
-        name="bungalow"
-        phone="(342) 009-3567"
-        email="bungalow@gmail.com"
-      />
-      <Contact 
-        img="./src/assets/modern.jpg" 
-        name="modern house"
-        phone="(567) 154-9977"
-        email="modern@gmail.com"
-      />
-      <Contact 
-        img="./src/assets/victorian.jpg" 
-        name="vicorian"
-        phone="(245) 099-4553"
-        email="victorian@gmail.com"
-      />
+    )
+  })
+
+  return ( 
+    <div className="contacts-list"> 
+      {dataMap}
     </div>
   )
 }
