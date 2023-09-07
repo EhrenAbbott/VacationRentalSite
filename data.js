@@ -6,6 +6,7 @@ export default [
         phone: "(212) 555-1234",
         email: "estate@gmail.com",
         availability: true,
+        rating: 4.8,
     }, 
     { 
         id: 2,
@@ -14,6 +15,7 @@ export default [
         phone: "(342) 009-3567",
         email: "bungalow@gmail.com",
         availability: true,
+        rating: 4.9,
     }, 
     { 
         id: 3,
@@ -22,13 +24,15 @@ export default [
         phone: "(567) 154-9977",
         email: "modern@gmail.com",
         availability: false,
+        rating: 4.5,
     }, 
     { 
         id: 4,
         img: "./public/assets/victorian.jpg", 
-        name: "vicorian",
+        name: "victorian",
         phone: "(245) 099-4553",
         email: "victorian@gmail.com",
-        availability: true,
+        availability: false,
+        rating: 4.7,
     },
 ]

@@ -13,6 +13,7 @@ export default function App() {
         phone={point.phone}
         email={point.email}
         availability={point.availability}
+        rating={point.rating}
       />
     )
   })
